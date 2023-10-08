@@ -66,11 +66,11 @@ body {
 .header-container {
   height: 100%;
   display: grid;
-  border: 5px solid #f50707;
+  /* border: 5px solid #f50707; */
 }
 
 .header .top {
-  border: 5px solid rgb(229, 229, 8);
+  /* border: 5px solid rgb(229, 229, 8); */
   display: grid;
   grid-template-columns: auto 1fr auto auto auto;
   gap: 20px;
@@ -80,20 +80,60 @@ body {
 
 .header .search-bar {
   border: 2px solid #000000;
-  height: 20px;
+  height: 25px;
   border-radius: 10px;
   margin-right: 50px;
 }
 
 .header .profile-pic {
   position: relative;
+  transform: translateY(-3px);
 }
-
-
 
 .header .bottom {
-  border: 5px solid rgb(1, 213, 250);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: start;
+  margin-top: -20px;
+  padding: 20px;
 }
+
+.header .left-side {
+  border: 5px solid rgb(250, 67, 1);
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.header .profile-container {
+  border: 5px solid rgb(1, 250, 76);
+}
+
+.header .profile-container .profile-name {
+  margin-top: 5px;
+}
+
+.header .bottom .profile-pic {
+  padding-top: 10px;
+  scale: 1.8;
+}
+
+.header .profile-container>div:first-child {
+  font-size: 0.8em;
+}
+
+.header .buttons {
+  /* border: 5px solid rgb(1, 213, 250); */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  justify-content: end;
+  align-items: center;
+  padding-right: 40px;
+}
+
+
 
 /* Main group */
 .main {
