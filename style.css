@@ -3,3 +3,57 @@
   padding: 0;
   background-color: #a1c3ff;
 }
+
+body {
+  height: 100vh;
+}
+
+/* global grid container */
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+/* Sidebar group */
+.sidebar {
+  background-color: #0a51cc;
+  /* height: 100%; */
+  color: white;
+  display: grid;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  padding: 20px;
+}
+
+.sidebar h1 {
+  background-color: #0a51cc;
+}
+
+.sidebar i {
+  background-color: #0a51cc;
+  margin-right: 10px;
+}
+
+.sidebar .container {
+  background-color: #0a51cc;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: start;
+}
+
+.sidebar .container>* {
+  margin-bottom: 10px;
+  background-color: #0a51cc;
+}
+
+/* Header group */
+.header {
+  grid-column: 2 / 2;
+}
+
+/* Main group */
+.main {
+  grid-column: 2 / 2;
+  grid-row: 2 / auto;
+}
