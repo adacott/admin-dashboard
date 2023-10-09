@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #a1c3ff;
+  background-color: #c9dcfc;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
@@ -13,6 +13,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
 }
 
 /* Sidebar group */
@@ -61,6 +67,12 @@ body {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   font-weight: 1000;
+  box-shadow: 0 0 8px black;
+  margin-bottom: 20px;
+}
+
+.header * {
+  background-color: #a1c3ff;
 }
 
 .header-container {
@@ -95,19 +107,16 @@ body {
   grid-template-columns: 1fr 1fr;
   place-content: start;
   margin-top: -20px;
+  margin-left: 20px;
   padding: 20px;
 }
 
 .header .left-side {
-  border: 5px solid rgb(250, 67, 1);
+  /* border: 5px solid rgb(250, 67, 1); */
   display: grid;
   grid-template-columns: 30px auto;
   align-items: center;
   gap: 20px;
-}
-
-.header .profile-container {
-  border: 5px solid rgb(1, 250, 76);
 }
 
 .header .profile-container .profile-name {
@@ -133,6 +142,17 @@ body {
   padding-right: 40px;
 }
 
+.header .buttons>* {
+  border: 1px solid #0a51cc;
+  background-color: #0a51cc;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+
+.header .buttons>*:hover {
+  background-color: white;
+  color: #0a51cc;
+}
 
 
 /* Main group */
