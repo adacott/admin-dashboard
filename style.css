@@ -258,26 +258,28 @@ a {
 }
 
 .main .trending h5 {
-  font-size: .5em;
+  font-size: .8em;
 }
 
 .main .trending p {
-  font-size: .5em;
+  font-size: .7em;
 }
 
 .main .trending .profile {
-  padding: 20px;
-  justify-self: end;
-}
-
-.main .trending .tren-box {
-  border-radius: 8px;
+  padding: 10px;
   display: grid;
-  box-shadow: 0 0 5px rgb(167, 166, 166);
+  grid-template-columns: 1fr 5fr;
 }
 
 .main .trending .tren-box * {
   background-color: #e8effc;
-  display: grid;
-  grid-template-columns: .5fr 3fr;
+}
+
+.main .trending .tren-box {
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgb(167, 166, 166);
+}
+
+.main .trending .profile img {
+  scale: 1.2;
 }
