@@ -181,11 +181,16 @@ a {
   font-weight: 1000;
   font-size: 1.2em;
   word-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .main h3 {
   padding: 20px 0px 5px 20px;
   font-size: clamp(1em, 2vw, 1.4em);
+}
+
+.main h5 {
+  padding: 0px 0px 0px 20px;
 }
 
 .main p {
@@ -194,6 +199,8 @@ a {
   font-size: clamp(.8em, 1vw, 1.2em);
   line-height: 1.2em;
 }
+
+/* Main Projects */
 
 .main .projects {
   grid-column: 1 / 2;
@@ -208,11 +215,11 @@ a {
 
 .main .projects .card {
   margin: 10px;
+  margin-top: 0;
   height: 210px;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px rgb(124, 124, 124);
   border-left: 7px solid #0a51cc;
   border-radius: 5px;
-
 }
 
 .main .projects .card *,
@@ -220,14 +227,57 @@ a {
   background-color: #e8effc;
 }
 
+/* Main announcements */
+
 .main .announcements {
   grid-column: 2 / 3;
 }
 
-.main .announcements * {
-  border-bottom: 1px solid black;
+.main .announcements h3 {
+  font-size: .8em;
 }
+
+.main .announcements .ann-box {
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgb(167, 166, 166);
+}
+
+.main .announcements .ann-box * {
+  background-color: #e8effc;
+}
+
+.main .announcements .card {
+  border-bottom: 1px solid #b4b2b2;
+}
+
+/* Main trending */
 
 .main .trending {
   grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.main .trending h5 {
+  font-size: .5em;
+}
+
+.main .trending p {
+  font-size: .5em;
+}
+
+.main .trending .profile {
+  padding: 20px;
+  justify-self: end;
+}
+
+.main .trending .tren-box {
+  border-radius: 8px;
+  display: grid;
+  box-shadow: 0 0 5px rgb(167, 166, 166);
+}
+
+.main .trending .tren-box * {
+  background-color: #e8effc;
+  display: grid;
+  grid-template-columns: .5fr 3fr;
 }
